@@ -30,7 +30,7 @@
             <div class="navbar-nav" id="navbarLinks">
                <a href="/projects.html" class="px-2">Projekty</a>
                <a href="/o-nas.html" class="px-2">O Nas</a>
-               <a href="#newsletter" class="px-2">Kontakt</a>
+               <a href="#contact" class="px-2">Kontakt</a>
             </div>
          </div>
       </div>
@@ -42,7 +42,8 @@
       <div class="hero-content-area">
          <h1>Mega Plus</h1>
          <h3>Profesjonalne doradztwo biznesowe i nieruchomosciowe</h3>
-         <a href="mailto:megaplys.com.pl@gmail.com" class="btn clt">Napisz do nas!</a>
+         <!-- <a href="mailto:adam@megaplus.com.pl" class="btn clt">Napisz do nas!</a> -->
+         <a href="#contact" class="btn clt">Napisz do nas!</a>
       </div>
 
    </section>
@@ -52,7 +53,7 @@
 
 
 
-   <section class="destinations ">
+   <section class="projects">
       <h3 class="title display-6">Przykłady Naszych Projektów</h3>
       <p>Zobacz wyniki starań, które na drodze wysiłku, dokładności i determinacji, ze strony naszego zespołu,
          idealnie oddają wysoki poziom usług i gwarantują pewność satysfakcji!</p>
@@ -121,15 +122,73 @@
    </section>
 
 
-   <section id="newsletter" class="newsletter ">
-      <h3 class="title display-6">Newsletter</h3>
-      <p>Zostaw maila i bądź na bieżąco</p>
-      <hr>
-      <form action="">
-         <input type="email" placeholder="E-mail">
-         <a href="#" class="btn text-white">Zapisz się!</a>
+
+   <section id="contact" class="relative">
+
+      <form id='form' class='pb-4 d-flex flex-column col-12 col-md-6 needs-validation' method='POST' novalidate netlify>
+         <input type='hidden' name='form-name' value='form' />
+         <h2 class="text-sweet-brown pb-3">Napisz do nas</h2>
+
+         <div class="d-flex flex-column position-relative mb-2">
+            <label for="name" class="form-label paragraph">Imię i nazwisko</label>
+            <input id="name" name="name" type="text" class="form-control" required>
+            <div class="invalid-feedback">
+               Proszę wprowadzić imię i nazwisko
+            </div>
+
+         </div>
+         <div class="d-flex flex-column position-relative mb-2">
+            <label for="phone" class="form-label paragraph">Telefon</label>
+            <input id="phone" name="phone" type="number" class="form-control" min="100000000" max="999999999" required>
+            <div class="invalid-feedback">
+               Proszę wprowadzić numer telefonu
+            </div>
+
+         </div>
+         <div class="d-flex flex-column position-relative mb-2">
+            <label for="email" class="form-label paragraph">E-mail</label>
+            <div class="input-group has-validation">
+               <span class="input-group-text" id="inputGroupPrepend">@</span>
+               <input type="email" class="form-control" id="email" name="email" aria-describedby="inputGroupPrepend"
+                  required>
+               <div class="invalid-feedback">
+                  Proszę wprowadzić email
+               </div>
+            </div>
+
+         </div>
+         <div class="d-flex flex-column position-relative mb-2">
+            <label for="text" class="form-label paragraph">Tekst wiadomości</label>
+            <textarea name="text" id="text" class="form-control" required></textarea>
+            <div class="invalid-feedback">
+               Proszę wprowadzić wiadomość
+            </div>
+         </div>
+         <div class="d-flex flex-column position-relative mb-2">
+            <div class="form-check">
+               <input class="form-check-input " type="checkbox" name="policy" id="flexCheckChecked" required>
+               <label class="form-check-label" for="flexCheckChecked">
+                  Wyrażam zgodę na przetwarzanie przez Podmiot moich
+                  danych osobowych zawartych w niniejszym formularzu, w celu otrzymania odpowiedzi na zadane
+                  pytanie.
+                  Szczegóły w polityce prywatności.
+               </label>
+            </div>
+            <div class="invalid-feedback">
+               Pole obowiązkowe
+            </div>
+         </div>
+         <button id="submit" class="btn btn-success my-1 text-uppercase" type="submit">Wyślij</button>
       </form>
+
    </section>
+
+
+
+
+
+
+
 
 
    <footer>
@@ -145,6 +204,8 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"></script>
+   <script src="./assets/js/app.js"></script>
+   <script src="./assets/js/validateForms.js"></script>
 </body>
 
 
