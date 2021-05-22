@@ -1,4 +1,4 @@
-/* contact page */
+/* newsletter page */
 *{
    margin:0; 
    padding:0;
@@ -22,6 +22,7 @@ body{
 
 .grid{
    width:100%;
+   padding-left:0;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -118,6 +119,63 @@ hr{
    margin-bottom: 50px;
 }
 
+h5.lead{
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+
+.svg-icon{
+   margin: -5px 0 0 0;
+   width:13px;
+   height: 13px;
+}
+
+
+section.content img.project-img{
+   margin: 3rem 0;
+}
+
+section.content h3,section.content h4, section.content h1{
+   margin-bottom: 0;
+   width: 100%;
+   display: flex;
+   padding:1rem;
+   background-color: #d0ebfa;
+   height: fit-content;
+}
+
+section.content h1{
+   border-bottom: 1px solid #a1becf;
+}
+
+section.content h5.description{
+   margin-top: 0;
+   margin-bottom: 0;
+   font-weight: 350;
+   line-height: 29px;
+   padding:0.7rem;
+   background-color: #e7f6ff;
+
+}
+
+section.content ul{
+   list-style: none;
+   box-sizing: border-box;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   flex:1;
+   padding:0.5rem;
+   /* padding-left: 35px; */
+   background-color: #e7f6ff;
+   /* height: fit-content; */
+}
+
+section.content ul li{
+   padding-bottom: 0.35rem;
+}
+
 
 /* projekty */
 
@@ -176,7 +234,7 @@ hr{
    content:'Transformacja cyfrowa';
 }
 .projects .grid li:nth-of-type(3):after{
-   content:'Konsulting nieruchomosciowy';
+   content:'Konsulting nieruchomościowy';
 }
 .projects .grid li:nth-of-type(4):after{
    content:'Szkolenia';
@@ -210,6 +268,10 @@ hr{
    }
 }
 
+
+.align-self-start li{
+   font-size: 1.15rem;
+}
 
 
 
@@ -258,6 +320,8 @@ footer{
 
 footer ul {
    display: flex;
+   list-style: none;
+
 }
 
 footer ul li{
