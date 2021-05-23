@@ -30,7 +30,7 @@
             <div class="navbar-nav" id="navbarLinks">
                <a href="/projects.html" class="px-2">Projekty</a>
                <a href="/o-nas.html" class="px-2">O Nas</a>
-               <a href="#contact" class="px-2">Kontakt</a>
+               <a href="#kontact" class="px-2">Kontakt</a>
             </div>
          </div>
       </div>
@@ -43,7 +43,7 @@
          <h1>Mega Plus</h1>
          <h3>Profesjonalne doradztwo biznesowe i nieruchomosciowe</h3>
          <!-- <a href="mailto:adam@megaplus.com.pl" class="btn clt">Napisz do nas!</a> -->
-         <a href="#contact" class="btn clt">Napisz do nas!</a>
+         <a href="#kontact" class="btn clt">Napisz do nas!</a>
       </div>
 
    </section>
@@ -123,11 +123,15 @@
 
 
 
-   <section id="contact" class="relative">
+   <section id="kontact" class="relative">
 
-      <form id='form' class='pb-4 d-flex flex-column col-12 col-md-6 needs-validation' method='POST' novalidate netlify>
+      <form id='contact-form' class='pb-4 d-flex flex-column col-12 col-md-6 needs-validation' method='POST' novalidate
+         netlify>
          <input type='hidden' name='form-name' value='form' />
-         <h2 class="text-sweet-brown pb-3">Napisz do nas</h2>
+         <h2 class="pb-3">Napisz do nas!</h2>
+         <h5 class="pb-3 lead">W celu skontaktowania się z naszym zespołem napisz do nas maila na adres <a
+               class="mailto text-dark " href="mailto:adam@megaplus.com.pl">adam@megaplus.com.pl</a> lub zostaw
+            wiadomość bezpośrednio na stronie, w formularzu poniżej. </h5>
 
          <div class="d-flex flex-column position-relative mb-2">
             <label for="name" class="form-label paragraph">Imię i nazwisko</label>
@@ -171,7 +175,7 @@
                   Wyrażam zgodę na przetwarzanie przez Podmiot moich
                   danych osobowych zawartych w niniejszym formularzu, w celu otrzymania odpowiedzi na zadane
                   pytanie.
-                  Szczegóły w polityce prywatności.
+                  <!-- Szczegóły w polityce prywatności. -->
                </label>
             </div>
             <div class="invalid-feedback">
@@ -194,11 +198,15 @@
    <footer>
       <p>Mega Plus</p>
       <p>Profesjonalne doradztwo biznesowe i nieruchomosciowe</p>
-      <ul>
+      <p>
+         &copy; 2021 DAMIAN TRAFIAŁEK <a href="mailto:damian.trafialek@gmail.com"
+            class="not-scroll">damian.trafialek@gmail.com</a>
+      </p>
+      <!-- <ul>
          <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
          <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
          <li><a href="#"><i class="fab fa-snapchat-square fa-2x"></i></a></li>
-      </ul>
+      </ul> -->
    </footer>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"

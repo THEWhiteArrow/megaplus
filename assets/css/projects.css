@@ -149,6 +149,9 @@ section.content h3,section.content h4{
    padding:1rem;
    background-color: #d0ebfa;
    height: fit-content;
+
+   -webkit-box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.25);
+   box-shadow:         0px 2px 7px 0px rgba(50, 50, 50, 0.25);
 }
 
 section.content h1{
@@ -177,6 +180,8 @@ section.content ul{
    /* padding-left: 35px; */
    background-color: #e7f6ff;
    /* height: fit-content; */
+   -webkit-box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.25);
+   box-shadow:         0px 3px 7px 0px rgba(50, 50, 50, 0.25);
 }
 
 section.content ul li{
