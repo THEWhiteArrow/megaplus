@@ -102,6 +102,11 @@ nav{
 
 nav a{
    color:black;
+   margin-top: 10px;
+}
+
+nav a:first-of-type{
+   margin-top: 15px;
 }
 
 @keyframes fadeIn {
