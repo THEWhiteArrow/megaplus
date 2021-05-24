@@ -354,10 +354,6 @@ section:not(.hero):nth-child(even){
    display: flex;
 }
 
-.hero .clouds svg:nth-of-type(2){
-   transform: scaleX(-1);
-}
-
 
 .hero h1{
    font-weight: bold;
