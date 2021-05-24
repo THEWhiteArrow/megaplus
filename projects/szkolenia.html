@@ -25,14 +25,22 @@
 <body>
    <!-- Forked from a template on Tutorialzine: https://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox -->
    <nav id="navbar" class="fixed-top navbar navbar-expand-md navbar-light nav-gradient px-0">
-      <div class="container-fluid ">
-         <a class="navbar-brand py-0 mx-0 px-2" href="/" aria-current="page">
+      <div id="menuToggle" class="container-fluid ">
+         <a class="navbar-brand py-0 mx-0 px-2" href="/#" aria-current="page">
             Mega Plus
          </a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> -->
+         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <input class="navbar-checkbox" type="checkbox" />
+            <span class="mt-1"></span>
+            <span></span>
+            <span></span>
          </button>
+         <!-- <span class="navbar-toggler-icon"></span> -->
+         <!-- </button> -->
          <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavAltMarkup">
             <div class="navbar-nav" id="navbarLinks">
                <a href="/projekty.html" class="px-2">Projekty</a>
@@ -49,7 +57,8 @@
 
          <div class="card-body">
             <h1 class="display-4 align-self-start">Szkolenia</h1>
-            <h5 class="lead description">Przykład zrealizowanego projektu Szef działu sprzedaży wiodącej firmy handlowej
+            <h5 class="lead description">Przykład zrealizowanego projektu. Szef działu sprzedaży wiodącej firmy
+               handlowej
                był
                niezadowolony
                z obowiązujących standardów raportowania, widząc nieefektywne wykorzystanie czasu pracowników. Mega Plus
@@ -134,16 +143,38 @@
                </svg>
             </span>
             <span>
-               Udział 100% departamentu w programie 100% satysfakcji 100% uczestników widzących realne przełożenie na
-               efektywności pracy
+               Udział 100% departamentu w programie
             </span>
+         </li>
+         <li class="d-flex flex-row">
+            <span class="me-2  d-flex justify-content-center">
+
+               <svg class="svg-icon " viewBox="0 0 20 20">
+                  <path
+                     d="M17.659,9.597h-1.224c-0.199-3.235-2.797-5.833-6.032-6.033V2.341c0-0.222-0.182-0.403-0.403-0.403S9.597,2.119,9.597,2.341v1.223c-3.235,0.2-5.833,2.798-6.033,6.033H2.341c-0.222,0-0.403,0.182-0.403,0.403s0.182,0.403,0.403,0.403h1.223c0.2,3.235,2.798,5.833,6.033,6.032v1.224c0,0.222,0.182,0.403,0.403,0.403s0.403-0.182,0.403-0.403v-1.224c3.235-0.199,5.833-2.797,6.032-6.032h1.224c0.222,0,0.403-0.182,0.403-0.403S17.881,9.597,17.659,9.597 M14.435,10.403h1.193c-0.198,2.791-2.434,5.026-5.225,5.225v-1.193c0-0.222-0.182-0.403-0.403-0.403s-0.403,0.182-0.403,0.403v1.193c-2.792-0.198-5.027-2.434-5.224-5.225h1.193c0.222,0,0.403-0.182,0.403-0.403S5.787,9.597,5.565,9.597H4.373C4.57,6.805,6.805,4.57,9.597,4.373v1.193c0,0.222,0.182,0.403,0.403,0.403s0.403-0.182,0.403-0.403V4.373c2.791,0.197,5.026,2.433,5.225,5.224h-1.193c-0.222,0-0.403,0.182-0.403,0.403S14.213,10.403,14.435,10.403">
+                  </path>
+               </svg>
+            </span>
+            <span>100% satysfakcji</span>
+         </li>
+         <li class="d-flex flex-row">
+            <span class="me-2  d-flex justify-content-center">
+
+               <svg class="svg-icon " viewBox="0 0 20 20">
+                  <path
+                     d="M17.659,9.597h-1.224c-0.199-3.235-2.797-5.833-6.032-6.033V2.341c0-0.222-0.182-0.403-0.403-0.403S9.597,2.119,9.597,2.341v1.223c-3.235,0.2-5.833,2.798-6.033,6.033H2.341c-0.222,0-0.403,0.182-0.403,0.403s0.182,0.403,0.403,0.403h1.223c0.2,3.235,2.798,5.833,6.033,6.032v1.224c0,0.222,0.182,0.403,0.403,0.403s0.403-0.182,0.403-0.403v-1.224c3.235-0.199,5.833-2.797,6.032-6.032h1.224c0.222,0,0.403-0.182,0.403-0.403S17.881,9.597,17.659,9.597 M14.435,10.403h1.193c-0.198,2.791-2.434,5.026-5.225,5.225v-1.193c0-0.222-0.182-0.403-0.403-0.403s-0.403,0.182-0.403,0.403v1.193c-2.792-0.198-5.027-2.434-5.224-5.225h1.193c0.222,0,0.403-0.182,0.403-0.403S5.787,9.597,5.565,9.597H4.373C4.57,6.805,6.805,4.57,9.597,4.373v1.193c0,0.222,0.182,0.403,0.403,0.403s0.403-0.182,0.403-0.403V4.373c2.791,0.197,5.026,2.433,5.225,5.224h-1.193c-0.222,0-0.403,0.182-0.403,0.403S14.213,10.403,14.435,10.403">
+                  </path>
+               </svg>
+            </span>
+            <span>100% uczestników widzących realne przełożenie na
+               efektywności pracy</span>
          </li>
       </ul>
    </section>
 
    <footer>
       <p>Mega Plus</p>
-      <p>Profesjonalne doradztwo biznesowe i nieruchomosciowe</p>
+      <p>Profesjonalne doradztwo biznesowe i nieruchomościowe</p>
       <p>
          &copy; 2021 DAMIAN TRAFIAŁEK <a href="mailto:damian.trafialek@gmail.com"
             class="not-scroll">damian.trafialek@gmail.com</a>

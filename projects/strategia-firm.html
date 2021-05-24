@@ -25,14 +25,22 @@
 <body>
    <!-- Forked from a template on Tutorialzine: https://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox -->
    <nav id="navbar" class="fixed-top navbar navbar-expand-md navbar-light nav-gradient px-0">
-      <div class="container-fluid ">
-         <a class="navbar-brand py-0 mx-0 px-2" href="/" aria-current="page">
+      <div id="menuToggle" class="container-fluid ">
+         <a class="navbar-brand py-0 mx-0 px-2" href="/#" aria-current="page">
             Mega Plus
          </a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> -->
+         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <input class="navbar-checkbox" type="checkbox" />
+            <span class="mt-1"></span>
+            <span></span>
+            <span></span>
          </button>
+         <!-- <span class="navbar-toggler-icon"></span> -->
+         <!-- </button> -->
          <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavAltMarkup">
             <div class="navbar-nav" id="navbarLinks">
                <a href="/projekty.html" class="px-2">Projekty</a>
@@ -48,16 +56,16 @@
       <div class="card mb-5 card-shadow">
 
          <div class="card-body">
-            <h1 class="display-4 align-self-start">Strategia Firm</h1>
+            <h1 class="display-4 align-self-start">Strategia firm</h1>
             <h5 class="lead description">Przykład zrealizowanego projektu. Wiodący gracz w branży meblarskiej po
                osiągnięciu
                satysfakcjonującej pozycji w Polsce zastanawiał się nad możliwością dywersyfikacji biznesu poprzez rozwój
                sieci
                sprzedaży za granica.
                Mega Plus pomógł zweryfikować założenia biznesowe, zidentyfikował potencjał wzrostu sprzedaży o >30% i
-               marzy
+               marży
                o
-               >40% oraz opracował strategie i dwuletni plan implementacji, który jest obecnie wdrażany.</h5>
+               >40% oraz opracował strategię i dwuletni plan implementacji, który jest obecnie wdrażany.</h5>
             <img src="../assets/img/startae-team-7tXA8xwe4W4-unsplash.jpg" width="100%" height="500px"
                class="project-img" alt="">
 
@@ -93,7 +101,7 @@
             </span>
             <span>
                Analiza 5+ rynków zagranicznych (potencjał, konkurencja, sieć
-               dystrybucji).
+               dystrybucji)
             </span>
          </li>
 
@@ -107,7 +115,7 @@
                </svg>
             </span>
             <span>
-               Identyfikacja potencjału wzrostu sprzedaży o >30% i marzy o >40%
+               Identyfikacja potencjału wzrostu sprzedaży o >30% i marży o >40%
             </span>
          </li>
          <li class="d-flex flex-row">
@@ -138,7 +146,7 @@
                </svg>
             </span>
             <span>
-               Akceptacja Zarządu I rozpoczęcie wdrożenia.
+               Akceptacja Zarządu I rozpoczęcie wdrożenia
             </span>
          </li>
 
@@ -147,7 +155,7 @@
 
    <footer>
       <p>Mega Plus</p>
-      <p>Profesjonalne doradztwo biznesowe i nieruchomosciowe</p>
+      <p>Profesjonalne doradztwo biznesowe i nieruchomościowe</p>
       <p>
          &copy; 2021 DAMIAN TRAFIAŁEK <a href="mailto:damian.trafialek@gmail.com"
             class="not-scroll">damian.trafialek@gmail.com</a>

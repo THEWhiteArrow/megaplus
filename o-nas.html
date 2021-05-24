@@ -20,14 +20,22 @@
 <body class="d-flex flex-column justify-content-between">
    <!-- Forked from a template on Tutorialzine: https://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox -->
    <nav id="navbar" class="fixed-top navbar navbar-expand-md navbar-light nav-gradient px-0">
-      <div class="container-fluid ">
-         <a class="navbar-brand py-0 mx-0 px-2" href="/" aria-current="page">
+      <div id="menuToggle" class="container-fluid ">
+         <a class="navbar-brand py-0 mx-0 px-2" href="/#" aria-current="page">
             Mega Plus
          </a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> -->
+         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <input class="navbar-checkbox" type="checkbox" />
+            <span class="mt-1"></span>
+            <span></span>
+            <span></span>
          </button>
+         <!-- <span class="navbar-toggler-icon"></span> -->
+         <!-- </button> -->
          <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavAltMarkup">
             <div class="navbar-nav" id="navbarLinks">
                <a href="/projekty.html" class="px-2">Projekty</a>
@@ -42,7 +50,7 @@
 
 
    <section class="founder d-flex flex-1 container-fluid container-lg">
-      <h1 class="display-4 d-flex align-self-center align-self-lg-start ps-lg-3">O Nas.</h1>
+      <h1 class="display-4 d-flex align-self-center align-self-lg-start ps-lg-3">O Nas</h1>
       <!-- <h5 class="display-6 text-center d-flex align-self-center align-self-lg-start ps-lg-3">Czyli kim jestem i jak
          zaszedłem tak daleko.</h5> -->
       <div class="member row mt-4">
@@ -61,7 +69,7 @@
                perferendis similique assumenda, soluta porro delectus ipsa aut, at magnam dolorum ea doloribus?</p>
             -->
 
-            <p class="lead mb-1 d-flex align-self-start">Moje osiągnięcia/zdolności :</p>
+            <!-- <p class="lead mb-1 d-flex align-self-start">Moje osiągnięcia/zdolności :</p> -->
             <ul class="p-0  w-100 d-flex flex-column align-items-start">
                <li class="lead d-flex flex-row">
                   <span class="me-2  d-flex justify-content-center">
@@ -153,7 +161,7 @@
    </div>
    <footer>
       <p>Mega Plus</p>
-      <p>Profesjonalne doradztwo biznesowe i nieruchomosciowe</p>
+      <p>Profesjonalne doradztwo biznesowe i nieruchomościowe</p>
       <p>
          &copy; 2021 DAMIAN TRAFIAŁEK <a href="mailto:damian.trafialek@gmail.com"
             class="not-scroll">damian.trafialek@gmail.com</a>

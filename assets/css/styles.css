@@ -103,17 +103,138 @@ nav{
 nav a{
    color:black;
    margin-top: 10px;
+   padding-bottom: 10px;
+   border-bottom: 2px solid rgb(156, 156, 156);
 }
 
 nav a:first-of-type{
    margin-top: 15px;
 }
 
+nav a:last-of-type{
+   margin-bottom: 15px;
+}
+
+
+
 @media(min-width:768px){
    nav a,nav a:first-of-type{
-      margin-top: 0;
+      margin-top: 0 !important;
+      padding-bottom: 0px;
+      border-bottom: none;
+   }
+   nav a:last-of-type{
+      margin-bottom: 0px;
    }
 }
+
+nav a.navbar-brand{
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+   border-bottom:none;
+}
+
+nav .navbar-collapse{
+   transition: all 0.15s ease-in;
+}
+
+
+#menuToggle
+{
+  position: relative;
+  
+  z-index: 1;
+  
+   /* -webkit-user-select: none;
+   user-select: none; */
+}
+
+
+
+
+#menuToggle input
+{
+   position: absolute;
+  display: block;
+  width: 57px;
+  height: 39px;
+  top: 0px;
+  right: 0px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+   transform: translate(-12px,0);
+  /* -webkit-touch-callout: none;    */
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform:translate(0px, -8px) rotate(45deg) ;
+  /* background: #232323; */
+  background: rgb(156, 156, 156);
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: translate(0px,20px) rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform:translate(0, 0px) rotate(-45deg) ;
+}
+
+
+
 
 @keyframes fadeIn {
    0%{
@@ -181,7 +302,8 @@ section:not(.hero):nth-child(even){
    justify-content: center;
    text-align: center;
    min-height: 100vh;
-   color:white;
+   /* color:white; */
+   color:#3045bb;
 }
 
 .hero .backgroundImg{
@@ -193,21 +315,37 @@ section:not(.hero):nth-child(even){
    top:0;
    left:0;
    width:100%;
-   height:100%;
+   height:100vh;
    z-index: -1;
    background-color:#80a3db; 
 }
 
+
+.hero .clouds{
+   position: absolute;
+   width:100%;
+   bottom:0;
+   left:0;
+   display: flex;
+}
+
+.hero .clouds svg:nth-of-type(2){
+   transform: scaleX(-1);
+}
+
+
 .hero h1{
-   font: bold 40px "Open Sans", sans-serif;
+   font: bold 45px "Open Sans", sans-serif;
    margin-bottom:15px;
-   text-shadow: 0px 2px 10px #3F3F3F;
+   /* -webkit-text-stroke:1px rgba(255, 255, 255, 0.6); */
+   /* text-shadow: 0px 2px 10px #3F3F3F; */
 }
 
 .hero h3{
    font: normal 20px "Open Sans", sans-serif;
    margin-bottom:40px;
-   text-shadow: 0px 2px 10px #1d1d1d;
+   /* -webkit-text-stroke:0.1px rgba(255, 255, 255, 0.6); */
+   /* text-shadow: 0px 2px 10px #1d1d1d; */
 }
 
 .hero a.btn{
@@ -267,7 +405,8 @@ section:not(.hero):nth-child(even){
 
    padding:30px 10px;
    border-radius: 15px;
-   background-color: rgba(255, 255, 255, 0.5);
+   /* background-color: rgba(255, 255, 255, 0.5); */
+   background-color: rgba(255, 255, 255, 0.7);
    border:2px solid rgba(255, 255, 255, 0.7);
    backdrop-filter: blur(10px);
 
@@ -297,9 +436,14 @@ section:not(.hero):nth-child(even){
    .hero-content-area{
       max-width: 560px;
    }
-   .hero h1{font-size: 45px;}
+   .hero h1{font-size: 50px;}
    .hero h3{font-size: 25px;}
    .hero a.btn {padding:15px 46px;}
+   .env-front,
+   .env-back,
+   .env-content{
+      display: block;
+   }
 }
 
 
@@ -311,15 +455,10 @@ section:not(.hero):nth-child(even){
 
 
 @media (min-width: 992px) { 
-   .env-front,
-   .env-back,
-   .env-content{
-      display: block;
-   }
    .hero-content-area{
       max-width: 780px;
    }
-   .hero h1{font-size: 50px;}
+   .hero h1{font-size: 55px;}
    .hero h3{font-size: 30px;}
    .hero a.btn {padding:15px 46px;}
 }
@@ -335,7 +474,7 @@ section:not(.hero):nth-child(even){
    }
    to{
       opacity:1;
-      transform: translateY(0);
+      transform: translateY(-20px);
    }
 }
 
@@ -386,7 +525,7 @@ section:not(.hero):nth-child(even){
 }
 
 .projects .grid li:nth-of-type(1):after{
-   content:'Strategia Firm';
+   content:'Strategia firm';
 }
 .projects .grid li:nth-of-type(2):after{
    content:'Transformacja cyfrowa';
