@@ -349,7 +349,7 @@ section:not(.hero):nth-child(even){
 .hero .clouds{
    position: absolute;
    width:100%;
-   bottom:0;
+   bottom:-2px;
    left:0;
    display: flex;
 }
