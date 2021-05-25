@@ -32,6 +32,10 @@ ul{
    list-style: none;
 }
 
+.cv li{
+   margin-top:5px;
+}
+
 a{
    text-decoration: none;
    opacity: 1;
