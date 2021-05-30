@@ -383,7 +383,7 @@ section.content ul li{
 }
 
 .projects .grid li:nth-of-type(1):after{
-   content:'Strategia Firm';
+   content:'Strategia firm';
 }
 .projects .grid li:nth-of-type(2):after{
    content:'Transformacja cyfrowa';
